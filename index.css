@@ -27,8 +27,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
-  position: relative;
+  border-radius: 40px;
 }
 
 .resultContainer h3 {
@@ -73,4 +72,60 @@ body {
   width: 50%;
   height: 100%;
   background-color: coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summaryContainer h3 {
+  color: #525869;
+  text-align: left;
+}
+.stats {
+  width: 80%;
+  height: 50%;
+  padding: 0 1vw;
+}
+.stats > div {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reactionStat,
+.memoryStat,
+.verbalStat,
+.visualStat {
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.1vw;
+  padding: 0 1vw;
+}
+
+.reactionStat div,
+.memoryStat div {
+  font-weight: 700;
+  color: hsl(240, 77%, 20%);
+}
+
+.reactionStat {
+  background-color: #fff6f5;
+}
+.reactionStat div:first-child {
+  color: #be6067;
+}
+.memoryStat div:first-child {
+  color: #debb78;
+}
+.memoryStat {
+  background-color: #fffbf2;
+}
+.memoryStat div:first-child,
+.reactionStat div:first-child {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
 }
