@@ -32,7 +32,9 @@ async function addSkills() {
       const score = document.createElement("span");
       score.classList.add("score");
       score.textContent = skill.score;
-      score.insertAdjacentHTML("beforeend", "/100");
+      skillScore.appendChild(score);
+      const topScore = document.createTextNode("/100");
+      skillScore.appendChild(topScore);
 
       //   appending skillLeft and skillScore to the skill(list) element;
       const skillElement = document.createElement("li");

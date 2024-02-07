@@ -21,7 +21,7 @@ body {
 }
 
 .resultContainer {
-  background-color: #5d3efb;
+  background-image: linear-gradient(to bottom, #6541fd, #342eea);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,12 +145,12 @@ button {
   border: none;
   border-radius: 10rem;
   color: #fff;
-  background-color: #4434ef;
+  background-image: linear-gradient(180deg, #4a23cc, #4936f2);
   cursor: pointer;
 }
 
 button:active {
-  background-color: #303b59;
+  background-image: linear-gradient(180deg, #323b58, #323b58);
 }
 
 @media (max-width: 600px) {
@@ -167,6 +167,7 @@ button:active {
   .result {
     width: 9rem;
     height: 9rem;
+    margin: 1rem 0;
   }
   .resultContainer h3 {
     padding: 0.4rem 0;
