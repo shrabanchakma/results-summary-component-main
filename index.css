@@ -5,6 +5,32 @@
   box-sizing: border-box;
 }
 
+:root {
+  --Light-red: hsla(0, 100%, 92%, 0.3);
+  --red: hsl(0, 100%, 67%);
+  --Light-yellow: hsla(39, 100%, 92%, 0.3);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Light-green: hsla(120, 100%, 92%, 0.3);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Light-blue: hsla(240, 100%, 92%, 0.3);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Lighter-royal-blue: hsla(241, 81%, 54%, 0.8);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 58%, 46%, 1);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  --Dark-gray: hsla(224, 30%, 52%, 0.59);
+  --fs-body: 18px;
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -21,7 +47,11 @@ body {
 }
 
 .resultContainer {
-  background-image: linear-gradient(to bottom, #6541fd, #342eea);
+  background-image: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,40 +150,49 @@ body {
 }
 
 .skill:nth-child(1) {
-  color: #bd6060;
-  background-color: #fff6f5;
+  color: var(--red);
+  background-color: var(--Light-red);
 }
 
 .skill:nth-child(2) {
-  color: #e1af55;
-  background-color: #fffbf2;
+  color: var(--Orangey-yellow);
+  background-color: var(--Light-yellow);
 }
 
 .skill:nth-child(3) {
-  color: #42a48d;
-  background-color: #f2fbfa;
+  color: var(--Green-teal);
+  background-color: var(--Light-green);
 }
 
 .skill:nth-child(4) {
-  color: #9299fc;
-  background-color: #f3f3fd;
+  color: var(--Violet-blue);
+  background-color: --Persian-blue;
 }
 
 button {
+  font-size: 1.1rem;
   font-weight: 700;
   padding: 1rem 2rem;
   border: none;
   border-radius: 10rem;
   color: #fff;
-  background-image: linear-gradient(180deg, #4a23cc, #4936f2);
+  background-image: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
   cursor: pointer;
 }
 
 button:active {
-  background-image: linear-gradient(180deg, #323b58, #323b58);
+  background-image: linear-gradient(
+    180deg,
+    var(--Dark-gray-blue),
+    var(--Dark-gray-blue)
+  );
 }
 
-@media (max-width: 600px) {
+@media (max-width: 375px) {
   .container {
     height: 100vh;
     flex-direction: column;
